@@ -1,0 +1,11 @@
+1.向上转型可以像作用于其他类型一样作用于泛型
+2.List必须按照插入的顺序保存元素，set里不能有重复元素，queue按照排队规则来确定对象产生的顺序
+3.listIterator只能用各种list类的访问。可以双向移动
+
+例： List<Pet>pets = new ArrayList<Pet>();
+ListIterator<Pet> it = new ListIterator;
+while(it.hasnext){
+	System.out.print(it.next()+","+it.nextIndex()+it.previousIndex()); 
+}
+
+4.LinkedList执行中间插入和删除时比ArrayList更高效，随机访问效率差
